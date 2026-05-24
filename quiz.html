@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Quiz – Batman Golden Age</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .quiz-intro {
+      text-align: center;
+      max-width: 540px;
+      margin: 0 auto 44px;
+      color: var(--text-dim);
+      font-size: 15px;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+    }
+    .result-role {
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="section-bg page-load">
+
+  <a href="index.html" class="back-btn" aria-label="Back to home">Back</a>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <p class="eyebrow">Batman Golden Age (Earth 2)</p>
+    <h1>Bat Family<span>Personality Quiz</span></h1>
+    <div class="divider"></div>
+  </header>
+
+  <!-- QUIZ WRAPPER -->
+  <div class="quiz-container">
+
+    <p class="quiz-intro">
+      Fifteen questions. Four choices each. One truth about who you really are.
+      Answer honestly — your result awaits at the end.
+    </p>
+
+    <!-- ── QUIZ SCREEN ──────────────────────────────────────────── -->
+    <div class="quiz-screen">
+
+      <!-- Progress -->
+      <div class="quiz-progress-wrap">
+        <div class="quiz-progress-label">
+          <span class="q-current">Question 1</span>
+          <span>of <strong class="q-total">15</strong></span>
+        </div>
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <!-- Question card -->
+      <div class="question-card">
+        <p class="question-number">Question 1 of 15</p>
+        <p class="question-text">Loading question...</p>
+        <div class="options-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="quiz-nav">
+        <button class="btn btn-primary btn-next" disabled style="opacity:0.4">Next Question</button>
+      </div>
+
+    </div><!-- /.quiz-screen -->
+
+    <!-- ── RESULT SCREEN ────────────────────────────────────────── -->
+    <div class="result-screen">
+
+      <!-- Result progress (full) -->
+      <div class="quiz-progress-wrap" style="margin-bottom:32px">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill result-progress" style="width:0%"></div>
+        </div>
+      </div>
+
+      <p class="result-label">Your Bat Family Identity</p>
+
+      <div class="result-card">
+        <div class="result-img-wrap">
+          <img class="result-img" src="" alt="" loading="lazy">
+        </div>
+        <div class="result-body">
+          <p class="result-role">You are</p>
+          <h2 class="result-name">Loading...</h2>
+          <p class="result-desc">Loading description...</p>
+          <div class="result-actions">
+            <a href="golden-age.html" class="btn btn-primary">Meet the Full Bat Family</a>
+            <button class="btn btn-secondary btn-restart">Retake the Quiz</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.result-screen -->
+
+  </div><!-- /.quiz-container -->
+
+  <script src="script.js"></script>
+</body>
+</html>
