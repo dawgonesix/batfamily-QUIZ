@@ -1,4 +1,4 @@
-// ── QUIZ DATA ──────────────────────────────────────────────────────────────────
+//QUIZ DATA
 const characters = {
   batman: {
     name: "Batman",
@@ -182,7 +182,7 @@ const questions = [
   }
 ];
 
-// ── QUIZ ENGINE ────────────────────────────────────────────────────────────────
+//QUIZ ENGINE
 let currentQ = 0;
 let scores = {};
 let selectedOption = null;
@@ -276,7 +276,7 @@ function restartQuiz() {
   renderQuestion();
 }
 
-// ── READ MORE TOGGLE ───────────────────────────────────────────────────────────
+//READ MORE TOGGLE
 function initReadMore() {
   document.querySelectorAll('.read-more-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -298,9 +298,9 @@ function initReadMore() {
   });
 }
 
-// ── INIT ───────────────────────────────────────────────────────────────────────
+//INIT
 document.addEventListener('DOMContentLoaded', () => {
-  // Page-specific inits
+  //Page-specific inits
   if (document.querySelector('.options-grid')) {
     initQuiz();
     document.querySelector('.btn-next').addEventListener('click', nextQuestion);
