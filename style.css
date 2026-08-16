@@ -37,7 +37,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── NOISE GRAIN ─────────────────────────────────────────── */
+/*NOISE GRAIN*/
 body::after {
   content: '';
   position: fixed;
@@ -48,7 +48,7 @@ body::after {
   z-index: 9999;
 }
 
-/* ─── ANIMATIONS ──────────────────────────────────────────── */
+/*ANIMATIONS*/
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -82,7 +82,7 @@ body::after {
 
 .page-load { animation: pageIn 0.55s var(--ease) both; }
 
-/* ─── BACK BUTTON ─────────────────────────────────────────── */
+/*BACK BUTTON*/
 .back-btn {
   position: fixed;
   top: 28px;
@@ -113,7 +113,7 @@ body::after {
   transform: translateX(-3px);
 }
 
-/* ─── PAGE HEADERS ────────────────────────────────────────── */
+/*PAGE HEADERS*/
 .page-header {
   text-align: center;
   padding: 100px 20px 60px;
@@ -147,7 +147,7 @@ body::after {
   margin: 28px auto 0;
 }
 
-/* ─── SECTION BACKGROUND ──────────────────────────────────── */
+/*SECTION BACKGROUND*/
 .section-bg {
   background:
     radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,27,56,0.5) 0%, transparent 70%),
@@ -155,9 +155,7 @@ body::after {
   min-height: 100vh;
 }
 
-/* ══════════════════════════════════════════════════════════
-   INDEX PAGE – HERO
-══════════════════════════════════════════════════════════ */
+/*INDEX PAGE – HERO*/
 .hero {
   position: relative;
   min-height: 100vh;
@@ -168,7 +166,7 @@ body::after {
   padding: 40px 24px;
 }
 
-/* Atmospheric background */
+/*Atmospheric background*/
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -179,7 +177,7 @@ body::after {
   z-index: 0;
 }
 
-/* Gotham skyline silhouette */
+/*Gotham skyline silhouette*/
 .hero-skyline {
   position: absolute;
   bottom: 0;
@@ -192,7 +190,7 @@ body::after {
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 220' preserveAspectRatio='xMidYMax slice'%3E%3Cpath fill='%23c9a227' d='M0,220 L0,160 L30,160 L30,140 L50,140 L50,120 L70,120 L70,100 L90,100 L90,140 L100,140 L100,80 L115,80 L115,60 L130,60 L130,80 L145,80 L145,140 L160,140 L160,100 L175,100 L175,70 L190,70 L190,100 L210,100 L210,140 L230,140 L230,110 L250,110 L250,90 L265,90 L265,70 L278,70 L278,50 L290,50 L290,40 L302,40 L302,50 L315,50 L315,70 L328,70 L328,90 L345,90 L345,110 L365,110 L365,140 L390,140 L390,120 L410,120 L410,100 L425,100 L425,85 L440,85 L440,100 L455,100 L455,120 L470,120 L470,140 L490,140 L490,110 L510,110 L510,85 L525,85 L525,65 L538,65 L538,45 L550,45 L550,35 L562,35 L562,45 L575,45 L575,65 L588,65 L588,85 L605,85 L605,110 L625,110 L625,140 L650,140 L650,115 L668,115 L668,95 L685,95 L685,115 L705,115 L705,140 L730,140 L730,100 L748,100 L748,75 L762,75 L762,55 L775,55 L775,75 L790,75 L790,100 L810,100 L810,130 L830,130 L830,110 L848,110 L848,90 L865,90 L865,75 L880,75 L880,90 L895,90 L895,110 L915,110 L915,130 L940,130 L940,100 L958,100 L958,80 L972,80 L972,60 L985,60 L985,80 L1000,80 L1000,100 L1018,100 L1018,130 L1040,130 L1040,110 L1058,110 L1058,90 L1075,90 L1075,110 L1095,110 L1095,130 L1120,130 L1120,100 L1140,100 L1140,80 L1155,80 L1155,60 L1168,60 L1168,80 L1185,80 L1185,100 L1205,100 L1205,130 L1230,130 L1230,140 L1255,140 L1255,115 L1272,115 L1272,95 L1290,95 L1290,115 L1310,115 L1310,140 L1340,140 L1340,160 L1370,160 L1370,140 L1390,140 L1390,160 L1440,160 L1440,220 Z'/%3E%3C/svg%3E") bottom center / cover no-repeat;
 }
 
-/* Floating bats */
+/*Floating bats*/
 .bats-container {
   position: absolute;
   inset: 0;
@@ -218,7 +216,7 @@ body::after {
 .bat:nth-child(7)  { left: 82%;  width: 16px; animation-duration: 17s; animation-delay: 2s; }
 .bat:nth-child(8)  { left: 91%;  width: 24px; animation-duration: 13s; animation-delay: 6s; }
 
-/* Hero image strip */
+/*Hero image strip*/
 .hero-image-strip {
   position: absolute;
   inset: 0;
@@ -228,7 +226,7 @@ body::after {
   filter: blur(2px) grayscale(1);
 }
 
-/* Hero content */
+/*Hero content*/
 .hero-content {
   position: relative;
   z-index: 10;
@@ -313,7 +311,7 @@ body::after {
   animation: fadeIn 0.8s var(--ease) 0.75s both;
 }
 
-/* ─── BUTTONS ─────────────────────────────────────────────── */
+/*BUTTONS*/
 .btn-group {
   display: flex;
   flex-wrap: wrap;
@@ -378,9 +376,7 @@ body::after {
   transform: translateY(-2px);
 }
 
-/* ══════════════════════════════════════════════════════════
-   GOLDEN AGE PAGE – CHARACTERS
-══════════════════════════════════════════════════════════ */
+/*GOLDEN AGE PAGE – CHARACTERS*/
 .characters-section {
   padding: 20px 24px 80px;
   max-width: 1300px;
@@ -516,9 +512,7 @@ body::after {
 }
 .char-card:hover .card-separator { width: 70px; }
 
-/* ══════════════════════════════════════════════════════════
-   QUIZ PAGE
-══════════════════════════════════════════════════════════ */
+/*QUIZ PAGE*/
 .quiz-container {
   max-width: 760px;
   margin: 0 auto;
@@ -729,11 +723,11 @@ body::after {
   flex-wrap: wrap;
 }
 
-/* Quiz screen toggle */
+/*Quiz screen toggle*/
 .quiz-screen { display: block; }
 .quiz-screen.hidden { display: none; }
 
-/* ─── RESPONSIVE ──────────────────────────────────────────── */
+/*RESPONSIVE*/
 @media (max-width: 768px) {
   .back-btn { top: 18px; right: 18px; padding: 8px 16px; font-size: 11px; }
   .question-card { padding: 28px 24px; }
